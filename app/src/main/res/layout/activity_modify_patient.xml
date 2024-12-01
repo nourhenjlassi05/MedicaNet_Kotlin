@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPatientActivity">
+
+    <EditText
+        android:id="@+id/edtNom"
+        android:hint="Nom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:paddingLeft="56dp"
+        android:textSize="16sp"
+        android:drawablePadding="16dp"
+        android:minHeight="48dp" /> <!-- Augmenter la hauteur minimum pour la cible tactile -->
+
+    <EditText
+        android:id="@+id/edtPrenom"
+        android:hint="Prénom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edtNom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:paddingLeft="56dp"
+        android:textSize="16sp"
+        android:drawablePadding="16dp"
+        android:minHeight="48dp" /> <!-- Augmenter la hauteur minimum pour la cible tactile -->
+
+    <EditText
+        android:id="@+id/edtDateNaissance"
+        android:hint="Date de Naissance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edtPrenom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:paddingLeft="56dp"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/ic_calendar"
+        android:drawablePadding="16dp"
+        android:minHeight="48dp" /> <!-- Augmenter la hauteur minimum pour la cible tactile -->
+
+    <EditText
+        android:id="@+id/edtAdresse"
+        android:hint="Adresse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edtDateNaissance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:paddingLeft="56dp"
+        android:textSize="16sp"
+        android:drawableLeft="@drawable/ic_location"
+        android:drawablePadding="16dp"
+        android:minHeight="48dp" /> <!-- Augmenter la hauteur minimum pour la cible tactile -->
+
+    <Button
+        android:id="@+id/btnSave"
+        android:text="Modifier"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edtAdresse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:minHeight="48dp" /> <!-- Augmenter la hauteur minimum pour la cible tactile -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

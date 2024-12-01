@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    tools:context=".PatientAdapter">
+
+    <!-- TextView for displaying patient's first name -->
+    <TextView
+        android:id="@+id/txtNom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nom"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="8dp" />
+
+    <!-- TextView for displaying patient's surname -->
+    <TextView
+        android:id="@+id/txtPrenom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Prénom"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtNom" />
+
+    <!-- TextView for displaying patient's birth date -->
+    <TextView
+        android:id="@+id/txtDateNaissance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Date de Naissance"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtPrenom" />
+
+    <!-- TextView for displaying patient's address -->
+    <TextView
+        android:id="@+id/txtAdresse"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Adresse"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtDateNaissance" />
+
+    <!-- Icon Edit -->
+
+    <!-- Icon Delete -->
+
+    <LinearLayout
+        android:layout_width="83dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.935"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iconEdit"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Edit"
+            android:src="@drawable/edit" />
+
+        <ImageView
+            android:id="@+id/iconDelete"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Delete"
+            android:src="@drawable/delete" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

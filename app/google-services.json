@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "57485774680",
+    "project_id": "fir-authentification-2024",
+    "storage_bucket": "fir-authentification-2024.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:57485774680:android:ce44e9169fa4c5d4571f2d",
+        "android_client_info": {
+          "package_name": "iset.dsi.projet_integration"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR-PoS3C_VnI9N8pexdNP3DwyAHnMR_rU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
